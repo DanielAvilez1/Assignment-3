@@ -18,12 +18,13 @@ header{
     height: 30vh;
     background-position: center center;
     background-size: cover;
+    text-align: center;
 }
     
-header h1{
+header  h1{
     
     font-size: 60px;
-    color: rgb(195, 200, 201);
+    color: rgb(72, 150, 219);
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -35,23 +36,33 @@ header h1{
 
     
 }
-header h3{
-
-    font-size:100px;
 
 
 
+header .social-media{
+    margin-top: 20px;
+    
 
+}
+header .social-media a{
+    color: white;
+    font-size: 30px;
+    margin-right: 40px;
 }
 /*menu*/
 nav.menu{
-    font-size: 16px;
-    background-color: dedede;}
+    background-color: white;
+    padding:30px;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
 nav a{
     display:inline-block;
     text-decoration: none;
-    color: rgb(73, 172, 183);
-    margin:right 10px;
+    color: rgb(6, 122, 224);
+    margin:right 15px;
 
 }
 
@@ -60,5 +71,67 @@ nav.menu a{
 }
 footer nav a{
     font-size: 12px;
+    color: rgb(6, 122, 224);
     
+    
+}
+/*index main*/
+div.services{
+    background-color: rgb(6, 122, 224);
+    /* t r b l*/
+    margin:10px 0 10px 0;
+    border-radius: 10px;
+    padding:20px;
+}
+div.services p{
+    line-height:2;
+
+}
+div.services-icons{/*this is the container of icon*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(9, 9, 1);
+    width:80px;
+    height:80px;
+    text-align: center;
+    border-radius: 50%;
+    margin:10px auto 10px auto;
+    
+}
+
+div.services-icons i{
+    font-size: 30px;
+}
+
+
+/*projects*/
+ul{
+    background-color: black;
+    width:50%;
+    padding:30px;
+}
+
+ul li,ol li{
+   border-left:5px solid black;
+    padding:10px;
+    background-color: rgb(43, 153, 170);
+    margin: 10px;
+
+
+}
+ul li:hover, ol li:hover{
+    background-color: black;
+    font-weight: 700;
+
+}
+h5{
+    font-size: 25px;
+}
+ol li{
+    color:white;
+    padding:10px;
+    background-color: rgb(43, 153, 170);
+    margin: 10px;
+    width:50%;
 }
