@@ -1,0 +1,133 @@
+/*global*/
+:root{
+    --primary:#ffcc00;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+
+img{
+    max-width: 100%;
+ 
+}
+a{
+    text-decoration: none;
+}
+/*utlilites*/
+
+/*menu*/
+nav.menu{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav.menu img{
+    height:30px;
+    padding-left: 20px;
+}
+
+.link-glass,.link-renew,.link-menu{
+    display:none;
+}
+.link-login{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color:black;
+
+}
+.link-subs{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding:17px;
+    
+}
+
+
+.link-subs:hover{
+    background-color:var(--primary);
+    color:black;
+    transition: background-color .3s ease-out .3s;
+    
+    
+    
+}
+
+
+.fillbutton .filltwo{
+    height: 100%;
+    position: right;
+}
+.link-angles{
+    color: black;
+
+}
+nav.menu a:last-of-type{
+    margin-right: 30px;
+}
+/*header*/
+header{
+    text-align: center;
+    height: 230px;
+    font-weight: 300;
+    font-size: 15px;
+}
+header h1{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 30px;
+    
+}
+header p{
+    font-size: 17px;
+}
+header span {
+    text-decoration-color: #ffcc00;
+    border-bottom: #ffcc00;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    
+   
+}
+header p span:hover{
+    background-color: #ffcc00;
+    color:black
+}
+header div {
+   padding-bottom: 25;
+   border-bottom: 4px solid var();
+   width: 6%;
+   margin:0px auto;
+}
+.generalheading{
+    padding: 50px 0 60px;
+    text-align: center;
+    color: black;
+}
+
+.generalheading__line{
+    background-color: #ffcc00;
+    height:4px;
+    line-height: 0;
+    margin: 21px auto 0;
+    width: 30px;
+    
+}
