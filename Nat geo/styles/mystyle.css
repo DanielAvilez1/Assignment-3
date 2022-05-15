@@ -4,6 +4,9 @@
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+html{
+    font-size: 62.5%; /*10px=1re*/
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +16,9 @@ body{
     background-color: black;
     color:white;
     font-family: 'Lato', sans-serif;
+}
+@media(min-width:768px) {
+
 }
 
 img{
@@ -33,6 +39,7 @@ h3:hover{
     cursor: pointer;
     text-decoration: underline;
 }
+
 /*utlilites*/
 .read-btn{
     text-transform: uppercase;
@@ -57,8 +64,17 @@ nav.menu img{
     padding-left: 20px;
 }
 
-.link-glass,.link-renew,.link-menu{
+.link-glass,.link-renew,.link-menu,.logo{
     display:none;
+}
+@media(min-width:768px){
+    .link-glass,.link-renew,.link-menu,.logo{
+    display: inline-block;
+    font-size: 1.6rem;
+    color:black;
+}
+.border{
+    display: none;
 }
 .link-login{
     text-transform: uppercase;
@@ -150,6 +166,26 @@ header div {
     width: 95%;
     margin: 10px auto;
 }
+@media(min-width:768px){
+    .main.main-container{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 65%;
+    }
+    .todays-picks-container{
+        width: 40rem;
+    }
+    .news-container{
+        width: 80rem;
+        padding-left: 1rem;
+    }
+    .secondary-news-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+   
+}
 .main-news{
     position: relative;/*parent*/
     margin-bottom: 20px;
@@ -198,28 +234,24 @@ p.title{
     font-weight: 700;
 }
 /*todays-picks*/
+.bar{
+    background-color: #ffcc00;
+    height: 25px;
+    line-height: 0;
+    margin: 21px auto 0;
+    width: 5px;
+    margin-left: 20px;
+    
+}
 .todays-pick-item{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-.todays-pick-item img{
-    width: 100px;
-    height: 100px;
-}
-.todays-pick-item p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 30px;
+    margin: 30px o;
+    
 }
 
-.block{
-    background-color: #ffcc00;
-    content:"" ;
-    display: block;
-    flex: 0 0 5px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    position: relative;
+.todays-pick-item p:hover{
+       cursor:pointer;
+    text-decoration:underline;
 }
